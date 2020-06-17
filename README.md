@@ -6,7 +6,7 @@ This repository shows an example how you can integrate JobRunr with [JakartaEE](
 This project has the following packages:
 - **org.jobrunr.examples**: this package contains 2 classes:
   - `JobRunrExampleApplication`: the EE application that defines the context path
-  - `JobRunrProvider`: a class that produces various beans that can be consumed in the http resources. 
+  - `JobRunrProvider`: a class that produces various beans that can be consumed in the http resources. It also contains the `BackgroundJobServer` responsible for processing background jobs.
 - **org.jobrunr.examples.services**: this package contains [MyService](src/main/java/org/jobrunr/examples/services/MyService.java), a simple ApplicationScoped service with two example methods which you can run in the background.  
 - **org.jobrunr.examples.webap.api**: this package contains two http resources:
   - `JobResource`: this resource contains two REST api's which allows you to enqueue new Background Jobs
