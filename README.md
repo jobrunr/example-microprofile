@@ -16,8 +16,8 @@ This project has the following packages:
 - clone the project and open it in your favorite IDE that supports Maven
 - Run the Maven plugin `mvn liberty:dev` and wait for OpenLiberty to be up & running
 - Open your favorite browser:
-  - Start the background job server and dashboard by navigating to http://localhost:9080/jobrunr/backgroundjob/start
+  - Start the background job server and dashboard by navigating to http://localhost:9080/jobrunr/start
   - Navigate to the JobRunr dashboard located at http://localhost:8000/dashboard.
-  - To enqueue a simple job, open a new tab and go to http://localhost:9080/jobrunr/jobs/simple-job?name=your-name
-  - To enqueue a long running job, open a new tab and go to http://localhost:9080/jobrunr/jobs/long-running-job?name=your-name
+  - To enqueue a simple job, open a new tab and go to http://localhost:9080/jobs/simple-job?name=your-name
+  - To enqueue a long running job, open a new tab and go to http://localhost:9080/jobs/long-running-job?name=your-name
   - Visit the dashboard again and see the jobs being processed!

@@ -6,7 +6,7 @@ import org.jobrunr.jobs.context.JobRunrDashboardLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 
 /**
  * This is a simple service
@@ -39,7 +39,7 @@ public class MyService implements MyServiceInterface {
                 LOGGER.info(String.format("Processing item %d: %s", i, anArgument));
                 System.out.println(String.format("Doing work item %d: %s", i, anArgument));
                 Thread.sleep(15000);
-                progressBar.increaseByOne();
+                progressBar.incrementSucceeded();
             }
             LOGGER.warn("Finished long running job...");
         } catch (InterruptedException e) {
